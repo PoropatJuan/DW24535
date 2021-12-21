@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./../img/madera_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* header */
+header{
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+header img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 30px 70px 30px 70px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:rgb(226, 226, 226);
+}
+
+nav ul li a:hover{
+    color:rgb(164, 255, 243);
+}
+
+/* main index */
+.bannerMain{
+    height: 100vh;
+    text-align: center;
+    background-image: url(./../img/vintage_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bannerMain h1{
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+/* footer */
+footer{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* contenedoresFooter */
+.contenedorFooter{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+
+.contactoFooter{
+    color:rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.contactoFooter h3{
+    padding: 20px;
+    font-size: 20px; 
+}
+.seccionesFooter{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgb(226, 226, 226);
+}
+
+.seccionesFooter h3{
+    padding: 20px;
+    font-size: 20px;
+}
+.seccionesFooter ul{
+    color:rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.seccionesFooter ul li{
+    padding-bottom: 10px;
+    list-style: none;
+}
+.seccionesFooter ul li a{
+    text-decoration: none;
+    color:rgb(226, 226, 226);
+    font-size: 18px;
+}
+
+.seccionesFooter ul li a:hover{
+    color:rgb(164, 255, 243);
+}
+
+.nosotrosFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33%;
+    color:rgb(226, 226, 226);
+    font-size: 20px;
+}
+
+.nosotrosFooter h3{
+    padding: 20px;
+    font-size: 20px;
+}
+footer img{
+    filter: grayscale(80%);
+    width: 25px;
+    margin: 10px;
+
+}
+
+footer img:hover{
+    filter: grayscale(0%);
+}
+
+.contenedorRedes{
+    align-self: flex-end;
+}
+
