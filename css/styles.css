@@ -55,11 +55,13 @@ nav ul li .nav-link:hover{
     color:rgb(13, 241, 211);
 }
 
+/* ---------------------------------------------- */
+
 /* main index */
 .bannerMain{
     height: 100vh;
     text-align: center;
-    background-image: url(./../img/vintage_banner.jpg);
+    background-image: url(./../img/bmw_banner.jpg);
     background-size: cover;
     background-repeat: no-repeat ;
     background-position: center;
@@ -190,8 +192,14 @@ video{
     height: 100%;
 }
 
+/* main nosotros */
 
+.mainContacto{
+    padding: 20px;
+    color: white;
+}
 
+/* ---------------------------------------------- */
 
 /* footer */
 footer{
@@ -238,9 +246,7 @@ footer{
 .seccionesFooter ul{
     color:rgb(226, 226, 226);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; 
+    flex-direction: column; 
 }
 
 .seccionesFooter ul li{
@@ -297,8 +303,13 @@ footer img:hover{
                             "img4 img4 img4 img4";
     } 
     .bannerMain{
-        background-image: url(./../img/mustang_banner.jpg);
-        
+        background-image: url(./../img/bmwold_banner.jpg);
+    }
+    
+    .contenedorFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -316,18 +327,114 @@ footer img:hover{
     } 
 
     .bannerMain{
-        background-image: url(./../img/porsche_banner.jpg);
+        background-image: url(./../img/banner_bmwold1.jpg);
     }
-}
-
-@media only screen and (max-width:992px){
+    .bannerMain h1{
+        padding-top: 10px;
+        font-size: 40px;
+    }
 
     .contenedorFooter{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
+    .seccionesFooter h3{
+        font-size: 14px;
+    } 
+        
+    .seccionesFooter ul li a{
+        font-size: 11px;
+    }
+
+    .nosotrosFooter h3{
+        font-size: 14px;
+    }
+
+    .nosotrosFooter h5{
+        font-size: 11px;
+    }
+
+    .contactoFooter h3{
+        font-size: 14px;
+    }
+
+    .contactoFooter h5{
+        font-size: 11px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+    .bannerMain h1{
+        padding-top: 100px;
+        font-size: 20px;
+    }
+
+    .contenedorFooter{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactoFooter h3{
+        font-size: 18px;
+    }
+
+    .contactoFooter h5{
+        font-size: 13px;
+    }
+
+    .seccionesFooter h3{
+        font-size: 18px;
+    }
+
+    .seccionesFooter ul li a{
+        font-size: 13px;
+    }
+
+    .nosotrosFooter h3{
+        font-size: 18px;
+    }
+
+    .nosotrosFooter h5{
+        font-size: 13px;
+    }
 } 
 
 @media only screen and (min-width:1200px){
+    .bannerMain h1{
+        padding-top: 60px;
+        font-size: 50px;
+    }
+
+    .contenedorFooter{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contactoFooter h3{
+        font-size: 25px;
+    }
+
+    .contactoFooter h5{
+        font-size: 20px;
+    }
+
+    .seccionesFooter h3{
+        font-size: 25px;
+    }
+
+    .seccionesFooter ul li a{
+        font-size: 20px;
+    }
+
+    .nosotrosFooter h3{
+        font-size: 25px;
+    }
+
+    .nosotrosFooter h5{
+        font-size: 20px;
+    }
 }
