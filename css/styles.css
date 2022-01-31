@@ -360,7 +360,7 @@ footer img:hover{
     align-self: flex-end;
 }
 
-@media only screen and (max-width:468px){
+@media (min-width:300px) and (max-width:468px){
     
     .containerGrid{
         grid-template-areas: 
@@ -374,34 +374,6 @@ footer img:hover{
         background-image: url(./../img/bmwold_banner.jpg);
     }
     
-    .contenedorFooter{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-@media (min-width:469px) and (max-width:768px){
-
-    .containerGrid{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-                            "img1 img1 img5 img5"
-                            "img1 img1 img5 img5"
-                            "img2 img2 img2 img2"
-                            "img3 img3 img3 img3"
-                            "img4 img4 img4 img4";
-    } 
-
-    .bannerMain{
-        background-image: url(./../img/banner_bmwold1.jpg);
-    }
-    .bannerMain h1{
-        padding-top: 10px;
-        font-size: 40px;
-    }
-
     .contenedorFooter{
         display: flex;
         flex-direction: column;
@@ -430,6 +402,60 @@ footer img:hover{
 
     .contactoFooter h5{
         font-size: 11px;
+    }
+
+}
+
+
+
+@media (min-width:468px) and (max-width:768px){
+
+    .containerGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+                            "img1 img1 img5 img5"
+                            "img1 img1 img5 img5"
+                            "img2 img2 img2 img2"
+                            "img3 img3 img3 img3"
+                            "img4 img4 img4 img4";
+    } 
+
+    .bannerMain{
+        background-image: url(./../img/banner_bmwold1.jpg);
+    }
+    .bannerMain h1{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+
+    .contenedorFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccionesFooter h3{
+        font-size: 12px;
+    } 
+        
+    .seccionesFooter ul li a{
+        font-size: 9px;
+    }
+
+    .nosotrosFooter h3{
+        font-size: 12px;
+    }
+
+    .nosotrosFooter h5{
+        font-size: 9px;
+    }
+
+    .contactoFooter h3{
+        font-size: 12px;
+    }
+
+    .contactoFooter h5{
+        font-size: 9px;
     }
 
 }
