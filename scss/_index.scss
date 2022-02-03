@@ -1,0 +1,14 @@
+.bannerMain {
+	height: 100vh;
+	text-align: center;
+	background-image: url(./../img/bmw_banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	h1 {
+		padding-top: 30px;
+		font-size: 40px;
+	}
+}
