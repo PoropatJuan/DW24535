@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+		content="Torino Detailing. Av. Sarmiento 2319, CABA. Reserva tu lugar llamando al 4833-2789">
+	<meta name="keywords"
+		content="Torino Detailing, Car Detailing, Detailing, Tratamientos Acrílicos, Tratamiento Cerámicos, ANTICHIP">
+	<meta name="author" content="Juan Poropat">
+
     <title>Torino Detailing</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -17,10 +26,10 @@
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img class="nav__logo" src="./img/LogoTorino.png" alt="logo DetailingP" data-aos="fade-right" 
+                    <img class="nav__logo" src="./img/LogoTorino.png" alt="logo DetailingP" data-aos="fade-right"
                         data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,61 +57,98 @@
         </nav>
     </header>
     <main>
-        <div class="bannerMain">
-            <h1>T o r i n o D e t a i l i n g</h1>
+        <!-- Start Carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/der.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>Cuidado, brillo y protección</h4>
+                        <p>Un vehículo limpio te conduce a un destino exitoso.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/middd.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>calidad, capacidad operativa y eficiencia</h4>
+                        <p>No es el auto que trabajamos es la motivación que causamos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/izq.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4>adaptándonos siempre a las necesidades de cada cliente.</h4>
+                        <p>El automóvil más bello es el que todavía nos queda por hacer.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <div>
-            <h2></h2>
+        <br>
+        <!-- End Carousel -->
 
+        <div class="boxTeam">
+            <div class="boxTeamImg">
+                <img src="./img/teamdetailing.jpg" alt="">
+            </div>
+            <div class="boxTeamH1p">
+                <h1>Team Torino Detaling</h1>
+                <p>Comenzamos nuestros labores en el año 1997, en un
+                    principio
+                    no poseíamos un lugar físico para realizar los trabajos por ende los hacíamos a domicilio, así fuimos formando nuestra cartera de
+                    clientes que fue creciendo cada día más.
+                    En el 2001 pudimos abrir nuestro primer local en la Avenida Sarmiento 2319 a base de constancia y la
+                    pasión
+                    por el detaling, en 2003 abrimos nuestra segunda sede ubicada en Caballito, ubicada en Valenín Virasoro
+                    573 y en el 2012 quisimos expandirnos aun más y logramos abrir nuestra tercer y última sede en el barrio
+                    de Parque Chas sobre la Avenida Los Incas 2133.
+
+                    Torino Detailing es una empresa dedicada a realizar tratamientos de Car Detailing, la empresa
+                    nació a
+                    raíz de nuestra pasión por los autos y nuestro fanatismo por el cuidado de los
+                    mismos.
+
+                    Nuesto objetivo: El fin del tratamiento es dejar tu vehículo protegido, sin rayas, ni marcas de ningún
+                    tipo y con un brillo extremo.
+                </p>
+            </div>
         </div>
     </main>
     <footer>
-        <div class="contenedorFooter">
-            <div class="contactoFooter">
-                <h3>CONTACTO</h3>
-
-                <h5>Dirección: Av.Sarmiento 2319</h5>
-
-                <h5>Palermo, Capital Federal</h5>
-
-                <h5>torinodetailing@gmail.com</h5>
+        <div class="container__footer">
+            <div class="direccion__footer">
+                <img class="periscopeo-icon" src="./img/periscope-icon.png" alt="">
+                <p>Av. Sarmiento 2319 - CABA</p>
             </div>
-            <div class="seccionesFooter">
-                <h3>SECCIONES</h3>
-                <ul class="">
-                    <li>
-                        <a href="./index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="./pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="./pages/servicios.html">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="./pages/galeria.html">GALERIA</a>
-                    </li>
-                    <li>
-                        <a href="./pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="nosotrosFooter">
-                <h3>NOSOTROS</h3>
-                <h5>Nos apasiona la estética vehicular y brindamos un cuidado especial en el tratamiento de la
-                    carrocería de cada vehículo. Nos une el detalle de lo hecho con excelencia. Torino Detailing.</h5>
+            <div class="email__footer">
+                <img class="email-icon" src="./img/email-icon.png" alt="">
+                <p>torino@detailing.com</p>
             </div>
         </div>
-        <div class="contenedorRedes">
-            <a href="https://whatsapp.com" target="blank">
-                <img src="./img/whatsapp1.png" alt="">
-            </a>
+        <div class="redes__footer">
             <a href="https://facebook.com" target="blank">
-                <img src="./img/facebook1.png" alt="">
+                <img class="facebook-icon" src="./img/facebook-icon.png" alt="">
             </a>
             <a href="https://www.instagram.com/" target="blank">
-                <img src="./img/instagram1.png" alt="">
+                <img class="instagram-icon" src="./img/instagram-icon.png" alt="">
             </a>
         </div>
     </footer>

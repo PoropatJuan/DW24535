@@ -1,79 +1,52 @@
+@import "_variables";
+
+/* Aplicando @mixin */
+@mixin caracteristicasFooter($tamanioLetraFooter, $colorTextFooter){
+
+	color: $colorTextFooter;
+	font-size: $tamanioLetraFooter;
+	font-family: monospace;
+}
+
 footer {
-	background-color: #00000047;
-	justify-content: center;
+	background-color: black;
+	justify-content: space-between;
 	align-items: center;
-	margin-top: 20px;
 	display: flex;
-	flex-direction: column;
-	img {
-		filter: grayscale(80%);
-		width: 25px;
-		margin: 10px;
-		&:hover {
-			filter: grayscale(0%);
+	flex-direction: row;
+	position: fixed;
+	bottom: 5px;
+    width: 100%;
+	
+	.container__footer{
+		display: flex;
+	}
+
+	.direccion__footer{
+		@include caracteristicasFooter(15px, gray );  /* Aplicando el @include de mixin */
+		display: flex;
+		align-items: center;
+		padding-right: 20px;
+		p{
+			// color: gray
+			margin-bottom: 0;
 		}
+	}	
+
+	.email__footer{   /* Aplicando @mixin + @extend */
+		@extend .direccion__footer 
+	}
+
+	.redes__footer{
+		display: flex;
+		align-items: center;
 	}
 }
 
-.contenedorFooter {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: flex-start;
-	width: 100%;
-	padding: 20px;
-}
-.contactoFooter {
-	color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 33%;
-	h3 {
-		padding: 20px;
-		font-size: 20px;
+@each $icon in periscopeo, email, instagram, facebook, whatsapp {
+	.#{$icon}-icon {
+		filter: grayscale(80%);
+		width: 25px;
+		margin: 10px;
 	}
-}
-.seccionesFooter {
-	width: 33%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: rgb(226, 226, 226);
-	h3 {
-		padding: 20px;
-		font-size: 20px;
-	}
-	ul {
-		color: rgb(226, 226, 226);
-		display: flex;
-		flex-direction: column;
-		li {
-			padding-bottom: 10px;
-			list-style: none;
-			a {
-				text-decoration: none;
-				color: rgb(226, 226, 226);
-				font-size: 18px;
-				&:hover {
-					color: rgb(164, 255, 243);
-				}
-			}
-		}
-	}
-}
-.nosotrosFooter {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	width: 33%;
-	color: rgb(226, 226, 226);
-	font-size: 20px;
-	h3 {
-		padding: 20px;
-		font-size: 20px;
-	}
-}
-.contenedorRedes {
-	align-self: flex-end;
-}
+} 	
