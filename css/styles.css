@@ -157,49 +157,58 @@ nav ul li .nav-link {
   width: 100%;
   height: 100%; }
 
-.mainServicios {
-  width: 100vw;
-  flex-wrap: wrap;
+/*Variables utilizadas en index */
+/*Variables utilizadas en toda la página*/
+main {
+  margin: 15px;
+  padding: 20px; }
+
+.titleCards {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-weight: 100; }
+
+.containerCard {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px; }
-
-.tabla {
-  width: 300px;
-  height: 400px;
-  margin: 12px;
-  border: 3px solid #fefeff;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 20px;
-  text-align: center;
-  color: #f0f1f7;
-  background-color: gray;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center; }
-  .tabla > h2 {
-    font-size: 25px;
-    margin-bottom: 18px; }
-  .tabla img {
-    width: 64px;
-    margin-bottom: 25px; }
-  .tabla > h3 {
-    font-size: 22px;
-    margin-bottom: 20px; }
-  .tabla > h5 {
-    font-size: 15px; }
-  .tabla > p {
-    color: greenyellow;
-    font-size: 15px; }
-  .tabla:hover {
-    background: #343759;
-    color: #f1f1f2;
-    transition: .5s all;
-    transform: scale(1.1);
-    cursor: pointer; }
+  .containerCard .card {
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .containerCard .card .cardImg {
+      height: 195px;
+      width: 100%; }
+      .containerCard .card .cardImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; }
+    .containerCard .card .cardTexto {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .containerCard .card .cardTexto h4 {
+        font-weight: 600; }
+      .containerCard .card .cardTexto p {
+        padding: 0 1rem;
+        font-size: 16px;
+        font-weight: 300; }
+      .containerCard .card .cardTexto a {
+        font-weight: 500;
+        text-decoration: none;
+        color: green;
+        padding-bottom: 15px; }
 
 .mainNosotros {
   width: 100vw;
