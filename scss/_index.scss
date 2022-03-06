@@ -7,28 +7,13 @@
 
 .boxTeam{
 	background-color: $backgroundcolor;
-	padding: 20px 20px 20px 20px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 0px 0px;
-	grid-template-areas: 'boxTeamImg' 'boxTeamH1p';
-
-		img {
-		grid-area: boxTeamImg;
-		width: 95%;
-		justify-self: center;
-		}
-
+	
 		h1{
-		grid-area: boxTeamH1p;
-		padding-top: 25px;
 		text-align: center;
 		color: $colortext;
-		padding-bottom: 20px;
 		}
 
 		p {
-			grid-area: boxTeamH1p;
 			text-align: justify;
 			font-weight: 300;
 			color: $colortext;

@@ -1,0 +1,141 @@
+/* .container-form {
+    width: 740px;
+    display: block;
+    margin: auto;
+  } */
+  
+  form{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+
+  }
+
+  .info-column-one {
+    display: flex;
+    
+    overflow: auto;
+    vertical-align: top;
+    
+  }
+
+  .nombre, .email, .tel, .servicios{
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+}
+  
+  .info-column-two {
+    display: flex;
+    
+    overflow: auto;
+    vertical-align: top;
+    
+  }
+  
+  .message-textarea {
+    display: flex;
+    flex-direction: column;
+    
+    height: 200px;
+    overflow: auto;
+    vertical-align: top;
+    
+  }
+  
+  .custom-submit-button {
+    width: 200px;
+    height: 100px
+  }
+  
+  label{
+      display: block;
+  }
+  
+  .container-form textarea{
+    width: 96%;
+    height: 70%;
+    font-family: 'montserrat', sans-serif;
+    padding-left: 8px;
+    padding-top: 8px;
+    background-color: #333;
+    border: none;
+    color: #e6e6e6;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+  
+  .container-form label{
+    font-family: 'montserrat', sans-serif;
+    color: #e6e6e6;
+    margin: 10px 0;
+    padding-left: 3px;
+  }
+  
+  .container-form input{
+    width: 80%;
+    margin-bottom: 25px;
+    height: 30px;
+    font-family: 'montserrat', sans-serif;
+    padding-left: 8px;
+    background-color: #333;
+    border: none;
+    color: #e6e6e6;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+  
+  .container-form select{
+    width: 80%;
+    margin-bottom: 25px;
+    height: 30px;
+    font-family: 'montserrat', sans-serif;
+    background-color: #333;
+    border: none;
+    color: #e6e6e6;
+    padding-left: 8px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+  
+  .container-form button {
+    width: 100px;
+    height: 40px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+  }
+  
+  abbr {
+    font-style: none;
+    color: #DA291C;
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: #222;
+  }
+
+  .wrap {
+    width: 740px;
+    margin: auto;
+  }
+
+  @media only screen and (max-width:768px){
+    .info-column-two, .info-column-one, .message-textarea, form{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .message-textarea{
+        width: 60vw;
+    }
+    form {
+        justify-content: center;
+        align-items: center;
+    }
+  }
