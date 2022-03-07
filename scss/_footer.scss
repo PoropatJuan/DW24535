@@ -43,6 +43,8 @@ footer {
 	}
 }
 
+/* Icons Redes */
+
 @each $icon in periscopeo, email, instagram, facebook, whatsapp {
 	.#{$icon}-icon {
 		filter: grayscale(80%);

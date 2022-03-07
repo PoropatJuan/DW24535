@@ -20,6 +20,18 @@ body {
 	background-attachment: fixed;
 }
 
+h1{
+	margin-top: 20px;
+	padding: 20px 20px 20px 20px;
+	color: white;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 15px;
+	border: 100vw;
+}
+
 /* Media Queries */
 @media (min-width:300px) and (max-width:468px) {
 	.containerGrid {
